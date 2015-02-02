@@ -1,0 +1,51 @@
+@charset "UTF-8";
+/* Responsive Layout */
+
+
+@media only screen and (min-width: 998px) and (max-width:1199px) {
+
+.media .col-md-3, .media .col-md-4 {height:215px;}
+}
+
+@media only screen and (min-width: 768px) and (max-width:997px) {
+#menu a{padding:10px 20px;}
+.media .col-md-3, .media .col-md-4 {height:165px;}
+}
+
+
+
+@media only screen and (max-width:767px) {
+body{padding-top:20px;}
+.logo{border-bottom:1px solid #000;}
+#nav{display:none;}
+#mobileMenu {display:block;width:100%;z-index:1000;	float:left; background:#ccc; margin:1px 0;}
+.service-detail .rows { margin:0;}
+.service-detail .rows .colum{width:100%; margin-bottom:20px}
+/***********Inner page***********/
+.barers-detail .item{margin-bottom:10px;}
+.barers-detail .item .image-col img{display:inline;}
+.sbHolder{ width:260px;}
+.sbSelector{ width:218px;}
+.sbOptions{ width:260px;}
+.date-time .option .available{margin:0}
+.date-time .option .booked{margin:0}
+.date-time .option .booked .grey-color{margin-left:5px;}
+.date-time .option .available .red-color{margin-left:5px;}
+.date-time .calender .col{width:100%; margin:0 0 30px;}
+.date-time .calender .nextbutton{margin: 0 0 15px;width: auto;}
+#footer .copyright{text-align:center;}
+}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (min-width:480px) and (max-width:767px) {
+.service-detail .rows { margin-bottom:40px;}
+.service-detail .rows .colum{width:50%; margin:0;}
+.media .col-md-3, .media .col-md-4 { width:100%; height:auto; padding:0;} .media .col-md-3 img, .media .col-md-4 img { width:100%;}
+/*************************/
+.barers-detail .col-md-3.col-sm-3{ width:50%; float:left;}
+.date-time .calender .col {margin: 0 0.3% 20px;  width: 49.4%;}
+}
+	
+	@media only screen and (min-width:310px) and (max-width:479px) {
+.media .col-md-3, .media .col-md-4 { width:100%; height:auto; padding:0;} .media .col-md-3 img, .media .col-md-4 img { width:100%;}
+}
